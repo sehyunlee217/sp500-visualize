@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Visualize S&P500</title>
+  </head>
+  <body>
+    <div id="container">
+      <h2>Historical Monthly S&P 500 Closing Price</h2>
+      <div id="stocks"></div>
+      <div>
+        <b>Range: 1985. Jan. 1 - 2024. Jan. 18</b> | All data is normalized; raw
+        data from
+        <a href="https://finance.yahoo.com/">Yahoo Finance</a>
+      </div>
+    </div>
+
+    <div id="container">
+      <h2>Federal Funds Effective Rate</h2>
+      <div id="feds"></div>
+      <div>
+        <b>Range: 1985. Jan. 1 - 2024. Jan. 18</b> | Raw data from
+        <a href="https://www.newyorkfed.org/markets/reference-rates/effr"
+          >Federal Reserve Bank of New York</a
+        >
+      </div>
+    </div>
+
+    <div id="container">
+      <h2>Annual v.s Monthly compounded Investments into S&P 500</h2>
+      <div id="invest"></div>
+      <div><b>Range: 1985. Jan. 1 - 2024. Jan. 18</b></div>
+    </div>
+
+    <div id="container">
+      <h2>Annual investments into S&P500 v.s Savings</h2>
+      <div id="compare"></div>
+      <div><b>Range: 1985. Jan. 1 - 2024. Jan. 18</b></div>
+    </div>
+
+    <div id="footer">
+      <div><a href="https://shyun.dev/">Joe Lee © 2024</a></div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
