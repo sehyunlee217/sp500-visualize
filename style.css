@@ -25,7 +25,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  padding: 1em
+  padding-left: 1em;
+  padding-right: 1em
 }
 
 #container{
