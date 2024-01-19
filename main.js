@@ -7,10 +7,11 @@ let sp500Data = [];
 let investData = [];
 
 // Read all Data from csv file
-const data_sp500 = await d3.csv("/SP500.csv");
-const data_kospi = await d3.csv("/KOSPI.csv");
-const data_feds = await d3.csv("/FEDFUNDS.csv");
-const data_nasdaq = await d3.csv("/NASDAQ.csv");
+// const data_sp500 = await d3.csv("/SP500.csv");
+const data_sp500 = await d3.csv("https://raw.githubusercontent.com/sehyunlee217/sp500-visualize/main/SP500.csv");
+const data_kospi = await d3.csv("https://raw.githubusercontent.com/sehyunlee217/sp500-visualize/main/KOSPI.csv");
+const data_feds = await d3.csv("https://raw.githubusercontent.com/sehyunlee217/sp500-visualize/main/FEDFUNDS.csv");
+const data_nasdaq = await d3.csv("https://raw.githubusercontent.com/sehyunlee217/sp500-visualize/main/NASDAQ.csv");
 
 data_sp500.map((data) => {
     plotdata.push({ Date: new Date(data.MonthDate), Close: Number(data.Price), Symbol: "S&P 500" });
